@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboard from './layouts/Dashboard.jsx';
+import Navi from './layouts/Navi';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+
+class App extends React.Component {
+
+      state = {
+          urunler : [],
+      }
+
+      
+    async componentDidMount() {  /* Fake API'den JSON veri fetch edildi */ 
+        const baseURL = "http://localhost:3003/urun";
+        const response = await fetch(baseURL);
+        console.log(response)
+        const data = await response.json();
+        console.log(data)
+        this.setState({urunler:data});
+      }
+   
+      render(){
+        return (
+          <div className="App">
+            <Navi/>   
+            <Dashboard        
+              urunler={this.state.urunler}
+            />
+        </div>
+        )
+      }
+  
 }
 
 export default App;

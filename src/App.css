@@ -2,37 +2,100 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top:3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.urunBilgileri{
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.urunUstBilgi{
+  margin-bottom: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.urunAdi{
+  font-weight: 700;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.urunFiyat{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+.urunSepetİslemleri{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.urunAciklamasi{
+  margin-top: 5%;
+}
+
+.urunAciklamasiBaslik{
+  margin-top: 5%;
+  font-weight: 700;
+}
+
+.bedenBaslik{
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+
+.urunSepetİslemleri{
+  margin-top: 5%;
+}
+
+.sepetButon{
+  margin-top: 5%;
+}
+
+.eskiFiyat{
+  text-decoration: line-through;
+  color:gray;
+  
+}
+
+.yeniFiyat{
+  color:orange;
+  font-weight: 700;
+}
+
+.indirimOrani{
+  color:red;
+  font-weight: 900;
+}
+
+.stokBilgisi{
+  color:green;
+  font-size: small;
+}
+
+li a {
+  color: orange;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #b9b9b9;
+  box-shadow: inset 1px 1px 1px 1px rgba(179, 142, 24, 0.548);    
+}
+.carousel-indicators .active {
+
+  background-color: orange;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }

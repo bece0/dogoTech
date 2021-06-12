@@ -1,0 +1,21 @@
+{
+    "urun":[
+               {
+                "urunId" : "1" ,
+                "urunAdi" : "Amsterdam Vibes" ,
+                "urunKategori" :"Sneaker",
+                "stokDurumu" : "Var",
+                "src": [
+                    "sneaker1.png",
+                    "sneaker2.png",
+                    "sneaker3.png"
+                ],
+                "urunFiyat" : 419.99 ,
+                "indirimOrani" : 30 ,
+                "urunAciklama" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio rerum eligendi voluptates nobis cupiditate, accusantium eos temporibus quis incidunt provident quod, consequuntur nesciunt? Veritatis officia dolor rerum soluta fugit!",
+                "urunBedenleri" : ["36","37","38","39","40","41"] 
+               }
+           
+           ]
+   
+   }
